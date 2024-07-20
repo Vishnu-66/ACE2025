@@ -1,0 +1,188 @@
+-Payment.java
+
+package package1;
+
+import java.util.Date;
+
+public class Payment {
+    private int paymentId;
+    private double amount;
+    private Date date;
+    private int userId;
+
+    public Payment(int paymentId, double amount, Date date, int userId) {
+        this.paymentId = paymentId;
+        this.amount = amount;
+        this.date = date;
+        this.userId = userId;
+    }
+
+    public int getPaymentId() {
+        return paymentId;
+    }
+
+    public void setPaymentId(int paymentId) {
+        this.paymentId = paymentId;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public void setAmount(double amount) {
+        this.amount = amount;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+}
+
+
+-Subscription.java
+
+package package1;
+
+import java.util.List;
+import java.util.ArrayList;
+
+public class Subscription {
+    private int SubscriptionId;
+    private int userId;
+    private String name;
+    private List<Integer> paymentIds;
+
+    public Subscription(int subscriptionId, int userId, String name) {
+        this.SubscriptionId = SubscriptionId;
+        this.userId = userId;
+        this.name = name;
+        this.paymentIds = new ArrayList<>();
+    }
+
+    public int getSubscriptionId() {
+        return subscriptionId;
+    }
+
+    public void setSubscriptionId(int playlistId) {
+        this.subscriptionId = subscriptionId;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Integer> getpaymentIds() {
+        return paymentIds;
+    }
+
+    public void addpaymentId(int paymentId) {
+        this.paymentId.add(paymentId);
+    }
+}
+
+-Vechile.java
+
+package package1;
+
+import java.util.Date;
+import java.util.List;
+import java.util.ArrayList;
+
+public class Vechile {
+    private int vechileId;
+    private String name;
+    private int transctionId;
+    private int paymentId;
+    private List<Integer> paymentIds;
+    private int length; // Length in seconds
+    private Date releaseDate;
+
+    public Vechile(int vechileId,  String name, int transctionId , int paymentId, int length, Date releaseDate) {
+        this.vechileId = vechileId;
+        this.name = name;
+        this.tarnsctionId = transctionId;
+        this.paymentId = paymentId;
+        this.genreIds = new ArrayList<>();
+        this.length = length;
+        this.releaseDate = releaseDate;
+    }
+    public int getVechileId() {
+        return VechileId;
+    }
+
+    public void setvechileId(int vechileId) {
+        this.vechileId = vechileId;
+    }
+
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String User) {
+        this.user = user;
+    }
+
+    public int getPaymentId() {
+        return paymentId;
+    }
+
+    public void setPaymentId(int paymentId) {
+        this.paymentId = paymentId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public List<Integer> getPAymentIds() {
+        return PaymentIds;
+    }
+
+    public void addPaymentId(int PaymentId) {
+        this.paymentIds.add(paymentId);
+    }
+
+    public int getLength() {
+        return length;
+    }
+
+    public void setLength(int length) {
+        this.length = length;
+    }
+
+    public Date getReleaseDate() {
+        return releaseDate;
+    }
+
+    public void setReleaseDate(Date releaseDate) {
+        this.releaseDate = releaseDate;
+    }
+}
